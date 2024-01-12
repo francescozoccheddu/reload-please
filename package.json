@@ -1,6 +1,6 @@
 {
   "name": "@francescozoccheddu/reload-please",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lightweight server and client script to trigger a browser page reload",
   "author": "Francesco Zoccheddu (https://github.com/francescozoccheddu/)",
   "homepage": "https://github.com/francescozoccheddu/reload-please#readme",
