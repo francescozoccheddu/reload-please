@@ -22,6 +22,7 @@ export class Server {
   }
 
   stop(): void {
+    this.ws?.clients.forEach(ws => ws?.terminate());
     this.ws?.close();
     this.ws = null;
   }
