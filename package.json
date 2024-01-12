@@ -1,0 +1,44 @@
+{
+  "name": "@francescozoccheddu/reload-please",
+  "version": "0.0.1",
+  "description": "Mini ",
+  "author": "Francesco Zoccheddu (https://github.com/francescozoccheddu/)",
+  "homepage": "https://github.com/francescozoccheddu/reload-please#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescozoccheddu/reload-please.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francescozoccheddu/reload-please/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "reload",
+    "browser",
+    "node",
+    "server"
+  ],
+  "scripts": {
+    "build": "shx rm -rf tsconfig.tsbuildinfo dist && tsc && npm-prepare-dist -f README.md -f LICENSE -s build -s lint -s clean -s publish",
+    "lint": "eslint ./src",
+    "clean": "shx rm -rf tsconfig.tsbuildinfo dist",
+    "publish": "npm run clean && npm run lint && npm run build && cd ./dist && npm publish --access public"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "npm-prepare-dist": "^0.4.1",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.10",
+    "ws": "^8.16.0"
+  }
+}
