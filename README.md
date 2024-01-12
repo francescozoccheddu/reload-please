@@ -36,8 +36,8 @@ client.start();
 client.stop();
 ```
 
-> **Note**
-You can also use `server.clientScript` or `getClientScript()` to inject the client code server-side, on the fly.
+> [!TIP]
+> You can also use `server.clientScript` or `getClientScript()` to inject the client code server-side, on the fly.
 
 ## Build
 
